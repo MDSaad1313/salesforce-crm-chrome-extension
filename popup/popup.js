@@ -40,7 +40,7 @@ function render() {
         );
     }
 
-    // 🕒 LAST SYNC
+    // LAST SYNC
     if (data.lastSync && data.lastSync[currentTab]) {
       const sync = document.createElement("div");
       sync.innerHTML = `<small>Last Sync: ${data.lastSync[currentTab]}</small><hr>`;
