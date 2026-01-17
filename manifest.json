@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Salesforce CRM Data Extractor",
+  "version": "1.0",
+  "description": "Extract Salesforce CRM data (Leads, Contacts, Accounts, Opportunities, Tasks)",
+
+  "permissions": ["storage", "tabs", "activeTab"],
+
+  "host_permissions": [
+    "*://*.salesforce.com/*",
+    "*://*.force.com/*"
+  ],
+
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.salesforce.com/*",
+        "*://*.force.com/*"
+      ],
+      "js": ["content_script.js"]
+    }
+  ]
+}

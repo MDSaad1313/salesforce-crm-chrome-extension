@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+  width: 260px;
+  padding: 10px;
+}
+
+button {
+  margin: 2px;
+  padding: 5px;
+}
+
+#content div {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  cursor: pointer;
+  margin-top: 4px;
+}
