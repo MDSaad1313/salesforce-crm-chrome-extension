@@ -62,9 +62,9 @@ function getTextByLabel(label) {
   return valueSpan ? valueSpan.innerText.trim() : "";
 }
 
-/* =========================
-   EXTRACTION (BEGINNER + REAL)
-========================= */
+/* ====================================≠≠=======================
+   EXTRACTION Functions - Lead,Contact,Account,Opportunity,Task
+================================================================ */
 
 function extractLead() {
   return {
@@ -122,7 +122,7 @@ function extractTask() {
 }
 
 /* =========================
-   STORAGE (ROBUST)
+   STORAGE 
 ========================= */
 function saveRecord(type, record) {
   chrome.storage.local.get("salesforce_data", (res) => {
